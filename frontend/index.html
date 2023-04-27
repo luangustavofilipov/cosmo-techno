@@ -1,0 +1,376 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cosmo Techno</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+        integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+
+
+    <link href="https://fonts.googleapis.com/css?family=Playfair&#43;Display:700,900&amp;display=swap" rel="stylesheet">
+
+    <style>
+        /* stylelint-disable selector-list-comma-newline-after */
+
+        .blog-header {
+            line-height: 1;
+            border-bottom: 1px solid #e5e5e5;
+        }
+
+        .blog-header-logo {
+            font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+            font-size: 2.25rem;
+        }
+
+        .blog-header-logo:hover {
+            text-decoration: none;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+        }
+
+        .display-4 {
+            font-size: 2.5rem;
+        }
+
+        @media (min-width: 768px) {
+            .display-4 {
+                font-size: 3rem;
+            }
+        }
+
+        .nav-scroller {
+            position: relative;
+            z-index: 2;
+            height: 2.75rem;
+            overflow-y: hidden;
+        }
+
+        .nav-scroller .nav {
+            display: flex;
+            flex-wrap: nowrap;
+            padding-bottom: 1rem;
+            margin-top: -1px;
+            overflow-x: auto;
+            text-align: center;
+            white-space: nowrap;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .nav-scroller .nav-link {
+            padding-top: .75rem;
+            padding-bottom: .75rem;
+            font-size: .875rem;
+        }
+
+        .card-img-right {
+            height: 100%;
+            border-radius: 0 3px 3px 0;
+        }
+
+        .flex-auto {
+            flex: 0 0 auto;
+        }
+
+        .h-250 {
+            height: 250px;
+        }
+
+        @media (min-width: 768px) {
+            .h-md-250 {
+                height: 250px;
+            }
+        }
+
+        /* Pagination */
+        .blog-pagination {
+            margin-bottom: 4rem;
+        }
+
+        .blog-pagination>.btn {
+            border-radius: 2rem;
+        }
+
+        /*
+        * Blog posts
+        */
+        .blog-post {
+            margin-bottom: 4rem;
+        }
+
+        .blog-post-title {
+            margin-bottom: .25rem;
+            font-size: 2.5rem;
+        }
+
+        .blog-post-meta {
+            margin-bottom: 1.25rem;
+            color: #727272;
+        }
+
+        /*
+        * Footer
+        */
+        .blog-footer {
+            padding: 2.5rem 0;
+            color: #727272;
+            text-align: center;
+            background-color: #f9f9f9;
+            border-top: .05rem solid #e5e5e5;
+        }
+
+        .blog-footer p:last-child {
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <header class="blog-header py-3">
+            <div class="row flex-nowrap justify-content-between align-items-center">
+                <div class="col-4 pt-1">
+                    <a class="link-secondary" href="#">Inscreva-se</a>
+                </div>
+                <div class="col-4 text-center">
+                    <a class="blog-header-logo text-dark" href="#">Cosmo Techno</a>
+                </div>
+                <div class="col-4 d-flex justify-content-end align-items-center">
+                    <a class="link-secondary" href="#" aria-label="Search">
+                        <svg xmlns="http://www.w3.org/2000/img" width="20" height="20" fill="none" stroke="currentColor"
+                            stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="mx-3" role="img"
+                            viewBox="0 0 24 24">
+                            <title>Pesquisar</title>
+                            <circle cx="10.5" cy="10.5" r="7.5" />
+                            <path d="M21 21l-5.2-5.2" />
+                        </svg>
+                    </a>
+                    <a class="btn btn-sm btn-outline-secondary" href="#">Sign up</a>
+                </div>
+            </div>
+        </header>
+
+        <div class="nav-scroller py-1 mb-2">
+            <nav class="nav d-flex justify-content-between">
+                <a class="p-2 link-secondary" href="#">Odyssey</a>
+                <a class="p-2 link-secondary" href="#">Nintendo 64</a>
+                <a class="p-2 link-secondary" href="#">Atari 7200</a>
+                <a class="p-2 link-secondary" href="#">Atari 5400</a>
+                <a class="p-2 link-secondary" href="#">Master System</a>
+                <a class="p-2 link-secondary" href="#">Master System II</a>
+            </nav>
+        </div>
+
+        <div class="p-4 p-md-5 mb-4 text-white rounded bg-dark">
+            <div class="col-md-6 px-0">
+                <h1 class="display-4 font-italic">Uma breve história</h1>
+                <p class="lead my-3">AQUI VAI O TEXTO</p>
+            </div>
+        </div>
+
+        <div class="row mb-2">
+            <div class="col-md-6">
+                <div
+                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-primary">Cosmo Techno</strong>
+                        <h3 class="mb-0">Git Hub</h3>
+                        <div class="mb-1 text-muted">Abril 23</div>
+                        <p class="card-text mb-auto">Este é um projeto baseado em ideias de blogs que tratam de assuntos
+                            referentes a jogos e consoles desde a origem.</p>
+                        <a href="https://github.com/luangustavofilipov/cosmo-techno" target="_blank"
+                            class="stretched-link">Acessar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div
+                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-success">Cosmo Techno</strong>
+                        <h3 class="mb-0">Twitter</h3>
+                        <div class="mb-1 text-muted">Abril 23</div>
+                        <p class="mb-auto">Nos contate pelo Twitter, lá postaremos atualizações sobre o blog e daremos
+                            suporte para os assinantes do Cosmo Techno.</p>
+                        <a href="https://twitter.com/techno_cosmo" target="_blank" class="stretched-link">Acessar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <h3 class="pb-4 mb-4 font-italic border-bottom">
+                    Dos criadores
+                </h3>
+
+                <div class="blog-post">
+                    <h2 class="blog-post-title">Por que gostamos de jogos e suas histórias?</h2>
+                    <p class="blog-post-meta">Abril 26, 2023 por <a href="#">Cosmo Techno</a></p>
+                    <hr>
+                    <blockquote>
+                        <p>
+                            Olá e bem-vindo(a) ao <em><strong>Cosmo Techno </strong></em>!
+                        </p>
+
+                        <blockquote>Nosso blog é dedicado a tudo relacionado à <strong>tecnologia</strong> e
+                            <strong>entretenimento</strong>, com um
+                            enfoque especial nos <strong>jogos</strong>. Acreditamos que jogos são uma forma poderosa de
+                            contar histórias e de
+                            nos transportar para mundos diferentes dos nossos.
+                        </blockquote>
+                        <p>Além disso, acreditamos que os jogos também nos ensinam importantes lições sobre
+                            resiliência, trabalho em equipe e superação de desafios. Eles nos desafiam a pensar fora da
+                            caixa e a encontrar soluções criativas para os problemas que enfrentamos em nosso caminho.
+                        </p>
+                        <blockquote>Mas não é apenas isso que nos faz amar os jogos. Eles também nos proporcionam
+                            momentos de diversão e descontração, permitindo que nos conectemos com amigos e familiares
+                            em um ambiente lúdico e seguro. Jogos nos dão a oportunidade de experimentar coisas que
+                            nunca seríamos capazes de fazer na vida real, e isso é uma sensação incrível.
+                        </blockquote>
+
+                        <blockquote>
+                            Portanto, se você é um fã de jogos ou apenas está procurando algo novo para experimentar,
+                            você veio ao lugar certo. No Cosmo Techno, compartilhamos nossas opiniões sobre os jogos
+                            mais recentes, exploramos as histórias por trás de nossos jogos favoritos e discutimos as
+                            últimas tendências em tecnologia de jogos.
+                        </blockquote>
+
+                        <blockquote>
+                            <p>
+                                Então, junte-se a nós nesta jornada emocionante e prepare-se para descobrir tudo o que
+                                há de mais novo e emocionante no mundo dos jogos. O Cosmo Techno está pronto para
+                                decolar - vamos juntos nessa aventura!
+                            </p>
+                        </blockquote>
+
+                        </p>
+                    </blockquote>
+                </div>
+
+                <div class="blog-post">
+                    <h2 class="blog-post-title">Sobre nossa equipe</h2>
+                    <p class="blog-post-meta">Abril 26, 2023 por <a href="#">Cosmo Techno</a></p>
+
+                    <p>
+                        A equipe <strong><em>Cosmo Techno</em></strong> é composta por pessoas que são apaixonadas por
+                        jogos eletrônicos e que possuem habilidades em diversas áreas relacionadas à criação de
+                        conteúdo.
+                    <blockquote>
+                        <p>
+                            Somos dedicados à criação de conteúdo sobre jogos, incluindo análises e curiosidades de
+                            diversos jogos e consoles, notícias sobre a indústria, lançamentos exclusivos entre outros.
+
+                        </p>
+                    </blockquote>
+                    </p>
+
+                    <blockquote>
+                        Além disso, buscamos estar sempre nos atualizando sobre as últimas tendências da indústria de
+                        jogos,
+                        para oferecer conteúdo relevante e interessante para o público.
+                    </blockquote>
+                    <blockquote>
+                        Os objetivos da <strong><em>Cosmo Techno</em></strong> estão relacionados a criar conteúdo de
+                        qualidade que seja interessante e relevante para nosso público.
+                    </blockquote>
+                    <p>
+
+                    </p>
+
+                    <blockquote>
+                        Em resumo, somos compostos por pessoas que são apaixonadas por jogos e
+                        estamos comprometidos em criar conteúdo de qualidade para o público, todas as novidades e
+                        exclusividades da industrias de jogos você encontra aqui!.
+                    </blockquote>
+                    </p>
+                </div>
+
+                <div class="blog-post">
+                    <h2 class="blog-post-title">Nintendo 64, sua relevância e importância no mercado</h2>
+                    <p class="blog-post-meta">Abril 26, 2023 por <a href="#">Cosmo Techno</a></p>
+
+                    <p>TEXTO VAI AQUI!</p>
+                </div>
+            </div>
+            <div class="p-4">
+                <h4 class="font-italic">Arquivos</h4>
+                <ol class="list-unstyled mb-0">
+                    <li><a href="#">Janeiro 2023</a></li>
+                    <li><a href="#">Fevereiro 2023</a></li>
+                    <li><a href="#">Março 2023</a></li>
+                    <li><a href="#">Abril 2023</a></li>
+                    <li><a href="#">Maio 2023</a></li>
+                    <li><a href="#">Junho 2023</a></li>
+                    <li><a href="#">Julho 2023</a></li>
+                    <li><a href="#">Agosto 2023</a></li>
+                    <li><a href="#">Setembro 2023</a></li>
+                    <li><a href="#">Outubro 2023</a></li>
+                    <li><a href="#">Novembro 2023</a></li>
+                    <li><a href="#">Dezembro 2023</a></li>
+                </ol>
+            </div>
+
+            <div class="p-4">
+                <h4 class="font-italic">Contate-nos</h4>
+                <ol class="list-unstyled">
+                    <li><a href="#">GitHub</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Facebook</a></li>
+                </ol>
+            </div>
+            </aside>
+
+        </div><!-- /.row -->
+
+    </main><!-- /.container -->
+
+    <footer class="blog-footer">
+        <p><strong><em>Cosmo Techno</em></strong> made with <a target="_blank"
+                href="https://getbootstrap.com/">Bootstrap</a>
+        <p>
+            <a href="#">Voltar para o topo</a>
+        </p>
+    </footer>
+
+
+
+</body>
+
+</html>
