@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cosmo Techno</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+        integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+
+
+    <link href="./fonts/Nasalization.otf" rel="stylesheet">
+    <link href="./fonts/Starjedi.ttf" rel="stylesheet">
+
+    <style>
+        /* stylelint-disable selector-list-comma-newline-after */
+       @font-face {
+           font-family: Nasalization;
+            src: url(./fonts/Nasalization.otf);
+        }
+       @font-face {
+           font-family: Star Jedi;
+            src: url(./fonts/Starjedi.ttf);
+        }
+       @font-face {
+           font-family: Origin;
+            src: url(./fonts/OriginTech.ttf);
+        }
+       @font-face {
+           font-family: Caviar;
+            src: url(./fonts/CaviarDreams.ttf);
+        }
+        footer {
+            background: rgb(31,0,59);
+            background: -moz-linear-gradient(90deg, rgba(31,0,59,0) 2%, rgba(99,43,115,0) 40%, rgba(200,0,255,0) 100%);
+            background: -webkit-linear-gradient(90deg, rgba(31,0,59,0) 2%, rgba(99,43,115,0) 40%, rgba(200,0,255,0) 100%);
+            background: linear-gradient(90deg, rgba(31,0,59,0) 2%, rgba(99,43,115,0) 40%, rgba(200,0,255,0) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1f003b",endColorstr="#c800ff",GradientType=1);
+        }
+        body {
+            background: rgb(31,0,59);
+            background: -moz-linear-gradient(90deg, rgba(31,0,59,1) 0%, rgba(99,43,115,1) 40%, rgba(200,0,255,1) 100%);
+            background: -webkit-linear-gradient(90deg, rgba(31,0,59,1) 0%, rgba(99,43,115,1) 40%, rgba(200,0,255,1) 100%);
+            background: linear-gradient(90deg, rgba(31,0,59,1) 0%, rgba(99,43,115,1) 40%, rgba(200,0,255,1) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1f003b",endColorstr="#c800ff",GradientType=1);
+        }
+
+        .blog-header {
+            line-height: 1;
+            border-bottom: 1px solid #f1f1f1;
+        }
+
+        .blog-header-logo {
+            font-family: "Origin";
+            font-size: 2.25rem;
+        }
+
+        .blog-header-logo:hover {
+            text-decoration: none;
+        }
+
+        p,
+        blockquote {
+            font-family: "Arial";
+            font-weight: 500;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: "Nasalization";
+        }
+
+        .display-4 {
+            font-size: 2.5rem;
+        }
+
+        @media (min-width: 768px) {
+            .display-4 {
+                font-size: 3rem;
+            }
+        }
+
+        .nav-scroller {
+            position: relative;
+            z-index: 2;
+            height: 2.75rem;
+            overflow-y: hidden;
+        }
+
+        .nav-scroller .nav {
+            display: flex;
+            flex-wrap: nowrap;
+            padding-bottom: 1rem;
+            margin-top: -1px;
+            overflow-x: auto;
+            text-align: center;
+            white-space: nowrap;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .nav-scroller .nav-link {
+            padding-top: .75rem;
+            padding-bottom: .75rem;
+            font-size: .875rem;
+        }
+
+        .card-img-right {
+            height: 100%;
+            border-radius: 0 3px 3px 0;
+        }
+
+        .flex-auto {
+            flex: 0 0 auto;
+        }
+
+        .h-250 {
+            height: 250px;
+        }
+
+        @media (min-width: 768px) {
+            .h-md-250 {
+                height: 250px;
+            }
+        }
+
+        /* Pagination */
+        .blog-pagination {
+            margin-bottom: 4rem;
+        }
+
+        .blog-pagination>.btn {
+            border-radius: 2rem;
+        }
+
+        /*
+        * Blog posts
+        */
+        .blog-post {
+            margin-bottom: 4rem;
+        }
+
+        .blog-post-title {
+            margin-bottom: .25rem;
+            font-size: 2.5rem;
+        }
+
+        .blog-post-meta {
+            margin-bottom: 1.25rem;
+            color: #f1f1f1;
+        }
+
+        /*
+        * Footer
+        */
+        .blog-footer {
+            padding: 2.5rem 0;
+            color: #f1f1f1;
+            text-align: center;
+            border-top: .05rem solid #f1f1f1;
+            background: rgb(31,0,59);
+            background: -moz-linear-gradient(90deg, rgba(31,0,59,0) 2%, rgba(99,43,115,0) 40%, rgba(200,0,255,0) 100%);
+            background: -webkit-linear-gradient(90deg, rgba(31,0,59,0) 2%, rgba(99,43,115,0) 40%, rgba(200,0,255,0) 100%);
+            background: linear-gradient(90deg, rgba(31,0,59,0) 2%, rgba(99,43,115,0) 40%, rgba(200,0,255,0) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1f003b",endColorstr="#c800ff",GradientType=1);
+        }
+
+        .blog-footer p:last-child {
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+
+<body class="bg-dark text-white">
+
+    <div class="container">
+        <header class="blog-header py-3">
+            <div class="row flex-nowrap justify-content-between align-items-center">
+                <div class="col-4 pt-1">
+                    <a class="link-light" href="#">Inscreva-se</a>
+                </div>
+                <div class="col-4 text-center">
+                    <a class="blog-header-logo text-decoration-none text-white" href="#">Cosmo Techno</a>
+                </div>
+                <div class="col-4 d-flex justify-content-end align-items-center">
+                    <a class="link-light" href="#" aria-label="Search">
+                        <svg xmlns="http://www.w3.org/2000/img" width="20" height="20" fill="none" stroke="currentColor"
+                            stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="mx-3" role="img"
+                            viewBox="0 0 24 24">
+                            <title>Pesquisar</title>
+                            <circle cx="10.5" cy="10.5" r="7.5" />
+                            <path d="M21 21l-5.2-5.2" />
+                        </svg>
+                    </a>
+                    <a class="btn btn-sm btn-outline-light" href="#">Sign up</a>
+                </div>
+            </div>
+        </header>
+
+        <div class="nav-scroller text-white py-1 mb-2">
+            <nav class="nav d-flex justify-content-between">
+                <a class="p-2 link-light" href="./odyssey.html">Odyssey</a>
+                <a class="p-2 link-light" href="./atari.html">Atari</a>
+                <a class="p-2 link-light" href="./master.html">Master System</a>
+                <a class="p-2 link-light" href="./play.html">Playstation</a>
+                <a class="p-2 link-light" href="./xbox.html">Xbox</a>
+                <a class="p-2 link-light" href="./turbo.html">TurboGrafx-CD</a>
+            </nav>
+        </div>
+    <main class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="blog-post">
+                    <h2 class="blog-post-title">Xbox Classic, o rejeitado pela Ásia </h2>
+                    <p class="blog-post-meta">Abril 27, 2023 por <a href="#">Pedro Henrique</a></p>
+                    <hr>
+
+                    <p>
+                        O <strong>Xbox Classic</strong> foi um console de videogame lançado em 2001 pela <em>Microsoft</em>. O console apresentava gráficos de alta qualidade e uma ampla gama de jogos exclusivos, além de recursos avançados, como um disco rígido interno e uma conexão com a Internet.
+                    </p>
+                        
+                    <blockquote>
+                        Embora o <strong>Xbox</strong> tenha se tornado um sucesso em muitos países, houve uma notável exceção: a Ásia. O console da <em>Microsoft</em> teve um desempenho abaixo do esperado em muitos mercados asiáticos, incluindo Japão e Coréia do Sul.
+                    </blockquote>
+                    <blockquote>
+                        Há várias razões que contribuíram para o desempenho fraco do <strong>Xbox</strong> na Ásia. Em primeiro lugar, muitos jogadores na Ásia preferiam jogos baseados em consoles produzidos localmente, como o PlayStation da <em>Sony</em> ou o Nintendo GameCube.
+                    </blockquote>
+                    <blockquote>
+                        Além disso, o <strong>Xbox</strong> não tinha uma biblioteca de jogos exclusivos que atraíssem os jogadores asiáticos. Muitos jogos populares do console eram jogos de tiro em primeira pessoa, um gênero que não era tão popular na Ásia quanto nos Estados Unidos e na Europa.
+                    </blockquote>
+                    <blockquote>
+                        Outro fator que contribuiu para o desempenho abaixo do esperado do <strong>Xbox</strong> na Ásia foi a falta de suporte localizado. A <em>Microsoft</em> enfrentou dificuldades em adaptar o console e seus jogos para as necessidades e preferências dos consumidores asiáticos.
+                    </blockquote>
+                    <blockquote>
+                        Apesar desses obstáculos, o <strong>Xbox</strong> ainda encontrou um nicho na Ásia e teve um desempenho respeitável em alguns mercados, como Taiwan e Hong Kong. No entanto, o desempenho abaixo do esperado do console na Ásia foi um obstáculo para a <em>Microsoft</em> em sua tentativa de estabelecer-se como uma concorrente séria na indústria de jogos eletrônicos.
+                    </blockquote>
+                </p>
+                </div>
+            </div>
+    </main><!-- /.container -->
+
+    <footer class="blog-footer text-light">
+        <p><strong><em>Cosmo Techno</em></strong> made with <a target="_blank"
+                href="https://getbootstrap.com/">Bootstrap</a>
+        <p>
+            <a href="#">Voltar para o topo</a>
+        </p>
+    </footer>
+</body>
+
+</html>

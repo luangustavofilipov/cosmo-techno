@@ -34,10 +34,41 @@
     </style>
 
 
-    <link href="https://fonts.googleapis.com/css?family=Playfair&#43;Display:700,900&amp;display=swap" rel="stylesheet">
+    <link href="./fonts/Nasalization.otf" rel="stylesheet">
+    <link href="./fonts/Starjedi.ttf" rel="stylesheet">
 
     <style>
         /* stylelint-disable selector-list-comma-newline-after */
+       @font-face {
+           font-family: Nasalization;
+            src: url(./fonts/Nasalization.otf);
+        }
+       @font-face {
+           font-family: Star Jedi;
+            src: url(./fonts/Starjedi.ttf);
+        }
+       @font-face {
+           font-family: Origin;
+            src: url(./fonts/OriginTech.ttf);
+        }
+       @font-face {
+           font-family: Caviar;
+            src: url(./fonts/CaviarDreams.ttf);
+        }
+        body{
+            background: rgb(31,0,59);
+            background: -moz-linear-gradient(90deg, rgba(31,0,59,1) 0%, rgba(99,43,115,1) 40%, rgba(200,0,255,1) 100%);
+            background: -webkit-linear-gradient(90deg, rgba(31,0,59,1) 0%, rgba(99,43,115,1) 40%, rgba(200,0,255,1) 100%);
+            background: linear-gradient(90deg, rgba(31,0,59,1) 0%, rgba(99,43,115,1) 40%, rgba(200,0,255,1) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1f003b",endColorstr="#c800ff",GradientType=1);
+        }
+        footer {
+            background: rgb(31,0,59);
+            background: -moz-linear-gradient(90deg, rgba(31,0,59,0) 2%, rgba(99,43,115,0) 40%, rgba(200,0,255,0) 100%);
+            background: -webkit-linear-gradient(90deg, rgba(31,0,59,0) 2%, rgba(99,43,115,0) 40%, rgba(200,0,255,0) 100%);
+            background: linear-gradient(90deg, rgba(31,0,59,0) 2%, rgba(99,43,115,0) 40%, rgba(200,0,255,0) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1f003b",endColorstr="#c800ff",GradientType=1);
+        }
 
         .blog-header {
             line-height: 1;
@@ -45,12 +76,18 @@
         }
 
         .blog-header-logo {
-            font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+            font-family: "Origin";
             font-size: 2.25rem;
         }
 
         .blog-header-logo:hover {
             text-decoration: none;
+        }
+
+        p,
+        blockquote {
+            font-family: "Arial";
+            font-weight: 500;
         }
 
         h1,
@@ -59,7 +96,7 @@
         h4,
         h5,
         h6 {
-            font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+            font-family: "Nasalization";
         }
 
         .display-4 {
@@ -148,8 +185,12 @@
             padding: 2.5rem 0;
             color: #f1f1f1;
             text-align: center;
-            background-color: #f1f1f1;
             border-top: .05rem solid #f1f1f1;
+            background: rgb(31,0,59);
+            background: -moz-linear-gradient(90deg, rgba(31,0,59,0) 2%, rgba(99,43,115,0) 40%, rgba(200,0,255,0) 100%);
+            background: -webkit-linear-gradient(90deg, rgba(31,0,59,0) 2%, rgba(99,43,115,0) 40%, rgba(200,0,255,0) 100%);
+            background: linear-gradient(90deg, rgba(31,0,59,0) 2%, rgba(99,43,115,0) 40%, rgba(200,0,255,0) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1f003b",endColorstr="#c800ff",GradientType=1);
         }
 
         .blog-footer p:last-child {
@@ -186,16 +227,16 @@
 
         <div class="nav-scroller text-white py-1 mb-2">
             <nav class="nav d-flex justify-content-between">
-                <a class="p-2 link-light" href="#">Odyssey</a>
-                <a class="p-2 link-light" href="#">Nintendo 64</a>
-                <a class="p-2 link-light" href="#">Atari 7200</a>
-                <a class="p-2 link-light" href="#">Atari 5400</a>
-                <a class="p-2 link-light" href="#">Master System</a>
-                <a class="p-2 link-light" href="#">Master System II</a>
+                <a class="p-2 link-light" href="./odyssey.html">Odyssey</a>
+                <a class="p-2 link-light" href="./atari.html">Atari</a>
+                <a class="p-2 link-light" href="./master.html">Master System</a>
+                <a class="p-2 link-light" href="./play.html">Playstation</a>
+                <a class="p-2 link-light" href="./xbox.html">Xbox</a>
+                <a class="p-2 link-light" href="./turbo.html">TurboGrafx-CD</a>
             </nav>
         </div>
 
-        <div class="p-4 p-md-5 mb-4 text-white rounded bg-dark">
+        <div class="p-4 p-md-5 mb-4 text-white rounded border">
             <div class="col-md-6 px-0">
                 <h1 class="display-4 font-italic">Uma breve história</h1>
                 <p class="lead my-3">Em 1972 nasceu o primeiro console de videogame lançado na história, batizado de
@@ -518,12 +559,11 @@
                             Apesar dos desafios enfrentados ao longo do tempo, a <strong>Atari</strong> continua sendo uma das empresas mais icônicas e importantes da história dos jogos eletrônicos. Sua contribuição para a popularização dos jogos eletrônicos e a introdução de novas tecnologias ainda são reconhecidas e valorizadas hoje em dia.
                         </blockquote>
                     </p>
-                    <hr>
                 </div>
             </div>
     </main><!-- /.container -->
 
-    <footer class="blog-footer text-light bg-dark">
+    <footer class="blog-footer text-light">
         <p><strong><em>Cosmo Techno</em></strong> made with <a target="_blank"
                 href="https://getbootstrap.com/">Bootstrap</a>
         <p>
